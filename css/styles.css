@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    height: 100%;
+}
+header{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+    font-size: 25px;
+    padding: 20px;
+    box-shadow: 0px 5px #9a9a9b98 ;
+}
+.logo{
+    float: left;
+    font-size: 35px;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo strong a{
+    color: #2be6ab;
+}
+.logo strong span{
+    color: #6a23b5;
+}
+nav{
+    float: right;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+    height: 100%;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 35px 15px;
+    color: black;
+    
+}
+nav ul li a:hover{
+    background-color: #2be6ab;
+    color: #6a23b5;
+    border-radius: 5px;
+}
+main{
+    height: calc(60vh - 80px);
+    width: 100%; 
+
+}
+
+.titleintro{
+    text-align: center;
+    font-size: 60px;
+    color: #220c3b;
+}
+.titleintro strong {
+    color: #2be6ab;
+}
+.titleintro strong span{
+    color: #6a23b5;
+}
+.intro{
+    margin: 10% 30% 30%;
+    width: 50%;
+    
+}
+.intro p{
+    font-size: 25px;
+    text-align: center;
+    color: #6a23b5;
+}
+section{
+    height: 850px;
+    width: 100%;
+    background-color: #6a23b5;
+}
+.cards{
+    position: relative;
+    z-index: 5;
+}
+.caja{
+    display: inline-block;
+    margin-top: -50px;
+    height: 350px;
+    padding: 50px 25px;
+    text-align: center;
+    position: relative;
+    width: 33%;
+    background:azure;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.caja:hover{
+    background-color: #2be6ab;
+    color: #6a23b5;
+}
+.caja p{
+    margin-top: 10px;
+}
+.world{
+    margin-top: 30px;
+}
+.world_title{
+    text-align: center;
+    color: #fff;
+}
+.world_title strong{
+    background-color: #2be6ab;
+    color: #220c3b;
+}
+.world_1{
+    width: 50%;
+    height: 200px;
+    float: left;
+    padding: 50px 25px;
+    color: #fff;
+}
+.world_2{
+    width: 50%;
+    height: 200px;
+    float: right;
+    padding: 50px 25px;
+    color: #fff;
+}
+.button_world{
+    align-items: center;
+    text-align: center;
+}
+.world_button{
+    font-size: 15px;
+    color: #641fb1;
+    display: inline-block;
+    text-transform: uppercase;
+    background: #2be6ab;
+    padding: 15px 50px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    min-width: 170px;
+    text-align: center;
+    border: none;
+}
+footer{
+    min-height: 90px;
+    width: 100%;
+    background-color: #220c3b;
+}
+footer p{
+   
+    text-align: center;
+    font-size: 25px;
+    color: #2be6ab;
+}
+html{
+    scroll-behavior: smooth;
+}
+.subir{
+    height: 60px;
+    width: 60px;
+    background-color: #2be6ab;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    border-radius: 30%;
+    border: 5px solid #fff;
+    color: #6a23b5;
+    box-shadow: 0 0 10px ;
+}
+.subir a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 480px) {
+    .logo{
+    float: left;
+    font-size: 35px;
+    }
+    #menu{
+        display: none;
+    }
+    .titleintro{
+        text-align: center;
+        font-size: 40px;
+        color: #220c3b;
+    }
+    .titleintro strong {
+        color: #2be6ab;
+    }
+    .titleintro strong span{
+        color: #6a23b5;
+    }
+    .intro{
+        margin: 10% 30% 30%;
+        width: 50%;
+        
+    }
+    .intro p{
+        font-size: 25px;
+        text-align: center;
+        color: #6a23b5;
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .caja{
+        width: 95%;
+        margin-bottom: 80px;
+       
+
+    }
+    
+}
