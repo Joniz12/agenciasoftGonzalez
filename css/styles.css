@@ -51,7 +51,8 @@ nav ul li a:hover{
 }
 main{
     height: calc(60vh - 80px);
-    width: 100%; 
+    width: 100%;
+     
 
 }
 
@@ -145,6 +146,12 @@ section{
     text-align: center;
     border: none;
 }
+.world_button:hover{
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transform: scale(1,1.25);
+}
 footer{
     min-height: 90px;
     width: 100%;
@@ -173,6 +180,7 @@ html{
     border: 5px solid #fff;
     color: #6a23b5;
     box-shadow: 0 0 10px ;
+    z-index: 7;
 }
 .subir a{
     text-decoration: none;
