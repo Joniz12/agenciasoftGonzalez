@@ -1,229 +1,137 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-}
-body{
-    height: 100%;
-}
-header{
-    height: 80px;
-    width: 100%;
-    background-color: #fff;
-    font-size: 25px;
-    padding: 20px;
-    box-shadow: 0px 5px #9a9a9b98 ;
-}
-.logo{
-    float: left;
-    font-size: 35px;
-}
-.logo a{
-    text-decoration: none;
-}
-.logo strong a{
-    color: #2be6ab;
-}
-.logo strong span{
-    color: #6a23b5;
-}
-nav{
-    float: right;
+  }
+  body {
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
     
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 10px;
-    height: 100%;
-}
-nav ul li a{
-    text-decoration: none;
-    padding: 35px 15px;
-    color: black;
-    
-}
-nav ul li a:hover{
+  }
+  
+  .nav-item:hover{
     background-color: #2be6ab;
     color: #6a23b5;
     border-radius: 5px;
-}
-main{
-    height: calc(60vh - 80px);
-    width: 100%;
-     
-
-}
-
-.titleintro{
+  }
+  .logo{
+    margin-left: 30px;
+  }
+  .titleintro{
     text-align: center;
     font-size: 60px;
     color: #220c3b;
-}
-.titleintro strong {
+  }
+  .titleintro strong {
     color: #2be6ab;
-}
-.titleintro strong span{
+  }
+  .titleintro strong span{
     color: #6a23b5;
-}
-.intro{
-    margin: 10% 30% 30%;
-    width: 50%;
-    
-}
-.intro p{
+  }
+  .intro p{
     font-size: 25px;
     text-align: center;
     color: #6a23b5;
-}
-section{
-    height: 850px;
-    width: 100%;
+  }
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  
+  .text-dark{
+    background-color: #2be6ab;
+  }
+  .marketing{
+    margin-top: -200px;
     background-color: #6a23b5;
-}
-.cards{
-    position: relative;
-    z-index: 5;
-}
-.caja{
-    display: inline-block;
-    margin-top: -50px;
-    height: 350px;
-    padding: 50px 25px;
-    text-align: center;
-    position: relative;
-    width: 33%;
-    background:azure;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-.caja:hover{
+  }
+  .card:hover{
     background-color: #2be6ab;
-    color: #6a23b5;
-}
-.caja p{
-    margin-top: 10px;
-}
-.world{
-    margin-top: 30px;
-}
-.world_title{
+  }
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
     text-align: center;
-    color: #fff;
-}
-.world_title strong{
-    background-color: #2be6ab;
-    color: #220c3b;
-}
-.world_1{
-    width: 50%;
-    height: 200px;
-    float: left;
-    padding: 50px 25px;
-    color: #fff;
-}
-.world_2{
-    width: 50%;
-    height: 200px;
-    float: right;
-    padding: 50px 25px;
-    color: #fff;
-}
-.button_world{
-    align-items: center;
-    text-align: center;
-}
-.world_button{
-    font-size: 15px;
-    color: #641fb1;
-    display: inline-block;
-    text-transform: uppercase;
-    background: #2be6ab;
-    padding: 15px 50px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    min-width: 170px;
-    text-align: center;
-    border: none;
-}
-.world_button:hover{
-    background: #11998e;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    transform: scale(1,1.25);
-}
-footer{
-    min-height: 90px;
-    width: 100%;
-    background-color: #220c3b;
-}
-footer p{
-   
-    text-align: center;
-    font-size: 25px;
-    color: #2be6ab;
-}
-html{
-    scroll-behavior: smooth;
-}
-.subir{
-    height: 60px;
-    width: 60px;
-    background-color: #2be6ab;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    text-align: center;
-    line-height: 60px;
-    font-size: 20px;
-    border-radius: 30%;
-    border: 5px solid #fff;
-    color: #6a23b5;
-    box-shadow: 0 0 10px ;
-    z-index: 7;
-}
-.subir a{
-    text-decoration: none;
-}
-@media only screen and (max-width: 480px) {
-    .logo{
-    float: left;
-    font-size: 35px;
-    }
-    #menu{
-        display: none;
-    }
-    .titleintro{
-        text-align: center;
-        font-size: 40px;
-        color: #220c3b;
-    }
-    .titleintro strong {
-        color: #2be6ab;
-    }
-    .titleintro strong span{
-        color: #6a23b5;
-    }
-    .intro{
-        margin: 10% 30% 30%;
-        width: 50%;
-        
-    }
-    .intro p{
-        font-size: 25px;
-        text-align: center;
-        color: #6a23b5;
-    }
-    .cards{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        justify-items: center;
-    }
-    .caja{
-        width: 95%;
-        margin-bottom: 80px;
-       
-
-    }
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  .featurette{
     
-}
+  }
+  .lead{
+    color: #f5faf8;
+  }
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    color: #f5faf8;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
