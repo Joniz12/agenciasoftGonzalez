@@ -5,8 +5,9 @@
     font-family: "Roboto", sans-serif;
   }
   body {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
+    background-color: #f5faf8;
     
   }
   
@@ -14,6 +15,10 @@
     background-color: #2be6ab;
     color: #6a23b5;
     border-radius: 5px;
+  }
+  .nav-link{
+    color: #2be6ab;
+    font-size: 20px;
   }
   .logo{
     margin-left: 30px;
@@ -73,7 +78,16 @@
     margin-top: -200px;
     background-color: #6a23b5;
   }
+  .card{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  }
   .card:hover{
+    background-color: #2be6ab;
+  }
+  .card-title{
+    font-size: 30px;
+    color: #220c3b;
     background-color: #2be6ab;
   }
   .marketing .col-lg-4 {
@@ -98,6 +112,10 @@
   }
   .lead{
     color: #f5faf8;
+  }
+  .featurette-image{
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    border-radius: 30px;
   }
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
